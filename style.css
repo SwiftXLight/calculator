@@ -3,10 +3,12 @@ body {
    background-color: #85c75e;
 }
 
+.container {
+   display: flex;
+   justify-content: center;
+}
+
 .calc-wrap {
-   position: absolute;
-   left: calc(50% - 254px);
-   top: 10%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
    grid-gap: 4px;
@@ -76,10 +78,6 @@ body {
 }
 
 @media (max-width: 580px) {
-
-   .calc-wrap {
-      left: calc(50% - 140px);
-   }
 
    .btn {
       min-width: 35px;
